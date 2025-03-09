@@ -19,3 +19,19 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.modal{
+  padding:32px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+}
+h3{
+  font-size: 14px;
+  color: #696868;
+}
+h4{
+  font-size: 12px;
+  color: #696868;
+}
