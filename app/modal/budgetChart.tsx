@@ -14,13 +14,13 @@ const spentAmount = 338;
 
 const BudgetChart = () => {
     return (
-        <div className="bg-white p-6 pb-0 rounded-xl w-full h-2/4">
-            <div className="flex justify-between items-center mb-4">
+        <div className="bg-white md:p-8 rounded-xl w-full h-2/4 md:h-auto">
+            <div className="flex justify-between items-center  pb-8">
                 <h2 className="text-lg font-semibold">Budgets</h2>
                 <button className="text-sm text-gray-500 hover:underline">See Details</button>
             </div>
 
-            <div className="flex justify-center items-center ">
+            <div className="flex flex-col  justify-center items-center ">
                 <div className="relative w-2/3 flex justify-center items-center ">
                     <PieChart width={300} height={300}>
                         <Pie
@@ -31,6 +31,7 @@ const BudgetChart = () => {
                             outerRadius={100}
                             dataKey="value"
                             paddingAngle={4}
+                            
                         >
                             {data.map((entry, index) => (
                                 <Cell key={`cell-${index}`} fill={entry.color} />
@@ -44,10 +45,10 @@ const BudgetChart = () => {
                     </div>
                 </div>
 
-                <div className="mt-4 w-1/2 ">
+                <div className=" m-[a] w-full flex-col  py-6 pt-0">
                     {data.map((item) => (
-                        <div key={item.id} className="flex flex-col text-sm py-1 px-2 my-3" style={{ borderLeftWidth: 'medium', borderLeftColor: item.color, borderLeftStyle: 'solid'  }}>
-                            <div className="flex items-center  text-brand-text_gray">
+                        <div key={item.id} className="flex  justify-between  text-sm py-4" >
+                            <div className="flex items-center  text-brand-text_gray px-4" style={{ borderLeftWidth: 'medium', borderLeftColor: item.color, borderLeftStyle: 'solid' }}>
                             
                                 {item.name}
                             </div>

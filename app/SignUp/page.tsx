@@ -28,7 +28,7 @@ const sign_up = () => {
                         <Input width="w-full" className='mb-1 mt-1' type="password" placeholder='************' />
                         <p className="text-xs flex justify-end text-brand-text_gray"><i className="not-italic">Password must be at least 8 characters</i></p>
                         <Button bgColor='bg-black' text="Create Account" textColor='text-white' className='my-4 flex justify-center' />
-                        <p className='mt-4 flex justify-center items-center text-brand-text_gray'>You have an account?  <Link  className="ml-1 text-brand-brand_black"href="/login">  Login</Link></p>
+                        <p className='mt-4 flex justify-center items-center text-brand-text_gray'>You have an account?  <Link  className="ml-1 text-brand-brand_black font-semibold"href="/login">  Login</Link></p>
                     </form>
                 </div>
             </div>
