@@ -10,7 +10,7 @@ import Image from 'next/image'
 const Sidebar = () => {
   return (
       <div>
-          <div className='bg-brand-brand_black  h-full fixed w-1/4 mb-16  pr-6 rounded-tr-xl'>
+          <div className='bg-brand-brand_black  h-full fixed w-1/5 mb-16  pr-6 rounded-tr-xl'>
               <h1 className="font-extrabold text-3xl text-white mt-10 text-left pl-8 mb-16">w-finance</h1>
               <ul>
                   <li className='py-4 px-6  flex text-black bg-white font-semibold rounded-r-xl '><Image  src={home} alt='home icon' className="mx-6"/>Overview</li>
