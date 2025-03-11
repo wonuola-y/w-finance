@@ -27,6 +27,10 @@ body {
   flex-direction: column;
 
 }
+h1{
+  font-weight: bold;
+  font-size: 32px;
+}
 h3{
   font-size: 14px;
   color: #696868;

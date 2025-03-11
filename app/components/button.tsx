@@ -16,7 +16,7 @@ const Button = (
     {
         type = "submit",
         // onClick,
-        bgColor = "bg-black ",
+        bgColor = "bg-black",
         textColor = "text-white",
         width = "w-full",
         text,
