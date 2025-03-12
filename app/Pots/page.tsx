@@ -8,7 +8,7 @@ const page = (
 ) => {
   return (
       <div className='flex bg-brand-bg_white_clr p-5 md:p-0 justify-between '>
-          <div className="hidden lg:block w-1/5 ">  <Sidebar /></div>
+          <div className="hidden lg:block w-1/5 ">  <Sidebar  /></div>
           <div className='w-full lg:w-4/5  md:p-8  '>
               <div className='flex justify-between mb-8'>
                   <h1 >Pots</h1>

@@ -43,6 +43,12 @@ svg{
   width: auto !important;
   height: auto !important;
 }
+.active{
+  background: white;
+  color: black;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
 @media screen and (min-width: 768px) {
  svg{
   width: 100% !important;

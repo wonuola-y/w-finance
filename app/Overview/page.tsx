@@ -14,9 +14,9 @@ import Bills from '../components/recurring_bills';
 const page = () => {
     return (
         <div className='flex bg-brand-bg_white_clr p-5 md:p-0 '>
-            <div className="hidden md:block w-1/4">  <Sidebar /></div>
-            <div className='w-full md:w-[75%] md:p-8  '>
-                <h1 className='mb-12 mt-5 pl-4 text-3xl font-semibold'>Overview</h1>
+            <div className="hidden md:block w-1/5">  <Sidebar /></div>
+            <div className='w-full  lg:w-4/5 md:p-8  '>
+                <h1 className='mb-12  mt-5 md:mt-0 pl-4 text-3xl font-semibold'>Overview</h1>
                 <div className='flex flex-col md:flex-row w-100 justify-between '>
 
                     <Tabs header="Current balance" text="$4,000" headColor="text-white" textColor='text-white' bgColor=" bg-brand-brand_black" width="w-5/6" />
