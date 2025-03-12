@@ -2,6 +2,7 @@ import React from 'react'
 import Emma from "../assets/Sidebar/emma.png";
 import TransactionOverview from '../components/transaction_overview'
 import BudgetProgress from '../components/budget_loader';
+import Card from './card';
 const budget_modal_data = [
     { id: 1, name: "Entertainment", expenseName: 'Emma',  value: 50, color: "#1B7F79", spent: 15.00, rem: 305.00, img:Emma, date:'12/12/24', max:305},
     { id: 2, name: "Bills", expenseName: 'Emma', value: 50, color: "#82C9D7", spent: 150.00, rem: 550.00, img:Emma, date:'12/12/24', max:700},
@@ -23,17 +24,10 @@ const BudgetModal = () => {
                   const spentValue = item.spent
                   const remaining = (maxValue ?? 0) - (spentValue ?? 0)
                   return (
-                      <div key={item.id} className='bg-white mb-4 py-8 px-6 rounded-lg'>
-                          <div className='flex justify-between pb-5'>
-                              <div className='flex items-center'>
-                                  <p className='w-4 h-4 rounded-full mr-4' style={{backgroundColor: item.color}}></p>
-                                  <h2 className='font-bold'>{item.name}</h2>
-                             </div>
-                              <p>...</p>
-                          </div>
+                      <Card key={item.id} header={item.name} themeColor={item.color}>
                           <div key={item.id}>
 
-                              <BudgetProgress max={ item.max ?? 0} spent={item.spent ?? 0} bgColor={item.color} />
+                              <BudgetProgress max={ item.max ?? 0} spent={item.spent ?? 0} bgColor={item.color} newdiv={<p className='text-brand-text_gray text-sm'> Maximum amount ${item.max.toFixed(2)} </p>} />
 
                               <div className="flex justify-between">
                                   <div className='flex items-center'>
@@ -67,7 +61,7 @@ const BudgetModal = () => {
                                   <TransactionOverview text={item.expenseName} img={item.img} color="black" amount={item.value} date={item.date} />
                              </div>
                           </div>
-                      </div>
+                      </Card>
             )
               }
               )}
