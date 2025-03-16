@@ -16,6 +16,13 @@ module.exports = {
           green: "#277C78",
         },
       },
+      backgroundImage: {
+        "search-icon": "url('./assets/Icons/search-button.png')",
+        "filter" : "url('./assets/Icons/filter.png')",
+        "category" : "url('./assets/Icons/category 2.png')",
+        "next" : "url('./assets/Icons/next.png')",
+        "previous" : "url('./assets/Icons/prev.png')",
+      }
     },
   },
   plugins: [],
