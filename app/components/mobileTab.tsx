@@ -24,8 +24,8 @@ const MobileTab = () =>{
     const navItems = [
         { name: "Home", path: "/Overview", activeIcon : homeg, inactiveIcon: home},
         { name: "Transactions", path: "/Transactions", activeIcon : transg, inactiveIcon: trans},
-        { name: "Budget", path: "/", activeIcon : budgetsg, inactiveIcon: budgets},
-        { name: "Pots", path: "/", activeIcon : potsg, inactiveIcon: pots},
+        { name: "Budget", path: "/Budget", activeIcon : budgetsg, inactiveIcon: budgets},
+        { name: "Pots", path: "/Pots", activeIcon : potsg, inactiveIcon: pots},
         { name: "Recurring", path: "/Bills", activeIcon : billsg, inactiveIcon: bills}
     ];
 
