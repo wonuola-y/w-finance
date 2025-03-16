@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Sidebar from '../components/sidebar'
 import Tabs from '../components/tabs'
@@ -7,9 +9,10 @@ import bites from '../assets/Sidebar/bites.png';
 import sun from '../assets/Sidebar/sun.png';
 import dan from '../assets/Sidebar/new_guy.png';
 import bigPot from '../assets/Icons/big_pot.svg';
-import TransactionOverview from '../components/transaction_overview';
+import Transaction_overview from '../components/transactions_overview';
 import BudgetChart from '../modal/budgetChart';
 import Bills from '../components/recurring_bills';
+import MobileTab from '../components/mobileTab'
 
 const page = () => {
     return (
@@ -75,11 +78,11 @@ const page = () => {
                             </div>
 
 
-                            <TransactionOverview text="Emma Richardson" amount="+$75.00" color="brand-green" img={emma} date="19-Aug-2025" />
-                            <TransactionOverview text="Sun Kim" amount="-$55.00" color="brand_black" img={sun} date="19-Aug-2025" />
-                            <TransactionOverview text="Savory bites" amount="+$75.00" color="black" img={bites} date="19-Aug-2025" />
-                            <TransactionOverview text="Dan carter" amount="+$97.00" color="brand-green" img={emma} date="19-Aug-2025" />
-                            <TransactionOverview text="Sun Kim" amount="+$75.00" color="brand-green" img={dan} date="19-Aug-2025" />
+                            <Transaction_overview text="Emma Richardson" amount="+$75.00" color="brand-green" img={emma} date="19-Aug-2025" />
+                            <Transaction_overview text="Sun Kim" amount="-$55.00" color="brand_black" img={sun} date="19-Aug-2025" />
+                            <Transaction_overview text="Savory bites" amount="+$75.00" color="black" img={bites} date="19-Aug-2025" />
+                            <Transaction_overview text="Dan carter" amount="+$97.00" color="brand-green" img={emma} date="19-Aug-2025" />
+                            <Transaction_overview text="Sun Kim" amount="+$75.00" color="brand-green" img={dan} date="19-Aug-2025" />
                         </div>
                     </div>
                     <div className='md:w-1/2 md:mx-4 '>
@@ -98,6 +101,7 @@ const page = () => {
                 </div>
 
             </div>
+            <div className="lg:hidden block">  <MobileTab /></div>
         </div>
     )
 }
