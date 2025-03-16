@@ -1,28 +1,47 @@
-import React from 'react'
-import home from "../assets/Icons/active_home.png";
-import budgets from "../assets/Icons/budgets.svg";
-import trans from "../assets/Icons/transactions.svg";
-import pots from "../assets/Icons/small_pot.png";
-import bills from "../assets/Icons/recurring_bills.svg";
-import Image from 'next/image'
+"use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx"; 
+import activeHome from "../assets/Icons/active_home.png";
+import pots from "../assets/Icons/small_pot.png";
+import budget from '../assets/Icons/recurring_bills.svg'
+import Image from "next/image";
 
 const Sidebar = () => {
+  const pathname = usePathname();
+
+  const links = [
+    { href: "/Overview", label: "Home" , img: activeHome},
+    { href: "/Budget", label: "Budget" , img:budget},
+    { href: "/Pots", label: "Pots" , img: pots},
+    { href: "/", label: "Contact" , img:activeHome},
+  ];
+
   return (
-      <div>
-          <div className='bg-brand-brand_black  h-screen fixed w-1/4 pt-1 pr-8 rounded-tr-xl'>
-              <h1 className="font-extrabold text-3xl text-white my-4 text-left pl-8">w-finance</h1>
-              <ul>
-                  <li className='py-4 px-6  flex text-black bg-white font-semibold rounded-r-xl '><Image  src={home} alt='home icon' className="mx-6"/>Overview</li>
-                  <li className='py-4 px-6 flex text-white  '><Image  src={trans} alt='2 arrows up and down' className="mx-6"/>Transactions</li>
-                  <li className='py-4 px-6 flex text-white '><Image src={budgets} alt='pie chart icon with cut outs' className="mx-6"/>Budget</li>
-                  <li className='py-4 px-6 flex text-white '><Image  src={pots} alt="a pot icon with doll" className="mx-6"/>Pots</li>
-                  <li className='py-4 px-6 flex text-white '><Image  src={bills} alt="a reciept icon" className="mx-6"/>Recurring bills</li>
-              </ul>
-          </div>
+    <aside className="w-64  h-screen fixed bg-gray-800 text-white p-4">
+      <nav>
+        <h1 className="mt-3 mb-8 text-center">w-finance</h1>
+        <ul>
+          {links.map(({ href, label, img}) => (
+            <li key={href} className="mb-2 flex items-center">
+             
+              <Link
+                href={href}
+                className={clsx(
+                  "p-3 rounded-md transition flex items-center w-full",
+                  pathname === href ? "bg-white text-black" : "hover:bg-gray-700"
+                )}
+              >
+                 <Image src={img} alt={label} className="mx-4"/>
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Sidebar
+export default Sidebar;

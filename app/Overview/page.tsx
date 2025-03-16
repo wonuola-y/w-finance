@@ -16,11 +16,10 @@ import MobileTab from '../components/mobileTab'
 
 const page = () => {
     return (
-        <div className='flex bg-brand-bg_white_clr p-5 md:0 '>
-            <div className="hidden lg:block w-1/4">  <Sidebar /></div>
-            
-            <div className='w-full md:w-[75%] md:pt-8 md:pl-10  '>
-                <h1 className='mb-4 pl-4 text-3xl font-semibold'>Overview</h1>
+        <div className='flex bg-brand-bg_white_clr p-5 md:p-0 '>
+            <div className="hidden md:block w-1/5">  <Sidebar /></div>
+            <div className='w-full  lg:w-4/5 md:p-8  '>
+                <h1 className='mb-12  mt-5 md:mt-0 pl-4 text-3xl font-semibold'>Overview</h1>
                 <div className='flex flex-col md:flex-row w-100 justify-between '>
 
                     <Tabs header="Current balance" text="$4,000" headColor="text-white" textColor='text-white' bgColor=" bg-brand-brand_black" width="w-5/6" />
@@ -28,27 +27,26 @@ const page = () => {
                     <Tabs header="Expenses" text="$4,000"
                         headColor=" text-brand-text_gray" textColor='text-black' bgColor="bg-white" width="w-5/6" />
                 </div>
-                <div className="flex flex-col my-8">
+                <div className="flex flex-col md:flex-row my-8">
                     <div className='mb-4 md:w-2/3'>
-                        <div className=' pots h-1/3 p-8 pb-5   bg-white rounded-2xl'>
-                            <div className='px-2 pb-5'>
+                        <div className=' pots h-1/3 p-8 md:py-8 pb-5   bg-white rounded-2xl'>
+                            <div className='pb-8'>
                                 <div className='flex justify-between'>
                                     <h1 className='font-bold text-[20px]'>Pots</h1>
                                     <button><h4 className='text-[14px] hover:underline'>See Details</h4></button>
 
                                 </div>
                             </div>
-                            <div className=' first_section_pt_1  px-2 flex w-full justify-between '>
-                                <div className='flex p-5 rounded-xl bg-brand-bg_white_clr w-1/2 items-center justify-between'>
-                                    <div className='w-1/4 flex items-center'>
-                                        <Image src={bigPot} alt="big savings pot icon" />
-                                    </div>
-                                    <div className='w-3/4'>
-                                        <h3 >Total Saved</h3>
-                                        <p className='mt-4 text-3xl font-bold'>$850</p>
+                            <div className=' first_section_pt_1 flex flex-col w-full justify-between '>
+                                <div className='flex px-0 py-5 md:p-5  mb-5  rounded-xl bg-brand-bg_white_clr w-full items-center justify-between'>
+                                    
+                                    <div className=' flex flex-col md:flex-row md:justify-between items-center w-full '>
+                                        <h3 className='flex items-center justify-between'>  <Image src={bigPot} alt="big savings pot icon" width={ 20} height={20} className='mr-2'/>Total Saved</h3>
+                                        <p className='mt-1 md:mt-0 text-3xl font-bold'>$850</p>
                                     </div>
                                 </div>
-                                <div className="next-to-tab w-1/2 px-4">
+                                <div className="next-to-tab w-full
+                                  pl-4 md:px-4">
                                     <div className='flex justify-between '>
                                         <div className='border-l-[#1B7F79] border-l-2 px-4 w-5/6'>
                                             <h4>Savings</h4>
@@ -73,8 +71,8 @@ const page = () => {
                             </div>
 
                         </div>
-                        <div className='transactions h-2/3 bg-white rounded-xl mt-3 p-8'>
-                            <div className='flex justify-between '>
+                        <div className='transactions h-2/3 bg-white rounded-xl mt-3 py-6 px-5 md:p-8'>
+                            <div className='flex pb-8 justify-between '>
                                 <h3 className='font-bold text-black text-[20px]'>Transactions</h3>
                                 <button><h4 className='text-[14px] hover:underline'>View All</h4></button>
                             </div>
@@ -87,9 +85,9 @@ const page = () => {
                             <Transaction_overview text="Sun Kim" amount="+$75.00" color="brand-green" img={dan} date="19-Aug-2025" />
                         </div>
                     </div>
-                    <div className='md:w-1/2 mb:mx-4 '>
+                    <div className='md:w-1/2 md:mx-4 '>
                         <BudgetChart />
-                        <div className='bg-white my-4 rounded-xl h-1/2'>
+                        <div className='bg-white my-4 rounded-xl '>
                             <div className='flex justify-between px-8 py-8'>
                                 <h3 className='font-bold text-black text-[20px]'>Recurring bills</h3>
                                 <button><h4 className='text-[14px] hover:underline'>See Details</h4></button>
