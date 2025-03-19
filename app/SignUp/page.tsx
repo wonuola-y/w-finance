@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from 'react'
 import Sidebar from "../assets/Sidebar/Sidebar.png";
 import Input from '../components/input';
@@ -6,7 +7,7 @@ import Button from '../components/button';
 import Image from 'next/image'
 import Link from "next/link";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../lib/firebase";
 const SignUp = () => {
     const [isClient, setIsClient] = useState(false);
     const [name, setName] = useState("")
