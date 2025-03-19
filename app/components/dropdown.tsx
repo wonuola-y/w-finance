@@ -1,6 +1,6 @@
 import { useState } from "react";
 import pagination from '../assets/Icons/paginatin.png';
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 type item = {
     name: string
@@ -9,6 +9,7 @@ type item = {
 type Props = {
     items : item[],
     first : string
+    
 }
 
 const Dropdown = ({items, first}:Props) =>{
