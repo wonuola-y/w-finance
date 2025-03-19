@@ -9,8 +9,8 @@ import sun from '../assets/Sidebar/sun.png';
 import dan from '../assets/Sidebar/new_guy.png';
 import TransactionList from '../components/TransactionsList'
 import MobileTab from '../components/mobileTab';
-import pagination from '../assets/Icons/paginatin.png';
-import Image, { StaticImageData } from 'next/image'
+// import pagination from '../assets/Icons/paginatin.png';
+// import Image  from 'next/image'
 import Dropdown from '../components/dropdown';
 
 const listOfTransactions = [

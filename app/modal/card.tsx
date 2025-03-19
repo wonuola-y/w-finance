@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import Dropdown from '../components/dropdown';
 
 type Props = {
     
@@ -20,7 +22,7 @@ const Card = ({ header, themeColor,  children }:Props) => {
                                     <p className='w-4 h-4 rounded-full mr-4' style={{ backgroundColor: themeColor }}></p>
                                     <h2 className='font-bold'>{header}</h2>
                                 </div>
-                                <p>...</p>
+                                <p><Dropdown items={[{name:"Modified"},{name:"Delete budget"}]} first = '...'/></p>
                             </div>
                     <div>
                         {children}
