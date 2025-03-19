@@ -1,9 +1,11 @@
-// import Image from "next/image";
+
+import DropdownPage from './modal/dropdownModal';
+
 
 export default function Home() {
   return (
     <div>
-      main
+      <DropdownPage />
    </div>
   );
 }
