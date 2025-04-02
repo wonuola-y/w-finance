@@ -5,7 +5,6 @@ import logo_4 from '../assets/Icons/Ellipse 13 3.png'
 import logo_5 from '../assets/Icons/Ellipse 13 4.png'
 import logo_6 from '../assets/Icons/Ellipse 13 5.png'
 import logo_7 from '../assets/Icons/Ellipse 13 6.png'
-import Image, { StaticImageData } from 'next/image'
 
 
 const BillsData = [

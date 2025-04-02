@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import React from 'react'
 import homeg from "../assets/Icons/active_home.png";
 import home from "../assets/Icons/inactive home.png";
@@ -13,7 +13,7 @@ import potsg from '../assets/Icons/pots green.png'
 import bills from "../assets/Icons/recurring_bills.svg";
 import billsg from '../assets/Icons/recuring green.png'
 import Link from 'next/link'
-import { useRouter } from 'next/router';
+
 import {usePathname} from 'next/navigation';
 
 

@@ -2,8 +2,8 @@ import React from 'react'
 import {useState} from "react";
 import Image, { StaticImageData } from 'next/image'
 import Transaction_page from './transaction_page';
-import previous from '../assets/Icons/prev.png'
-import nextImg from '../assets/Icons/next.png'
+// import previous from '../assets/Icons/prev.png'
+// import nextImg from '../assets/Icons/next.png'
 import pagination from '../assets/Icons/paginatin.png'
 import TransactionHeader from './transactionHeader';
 ;

@@ -1,5 +1,5 @@
 import React from 'react' 
-import Image, { StaticImageData } from 'next/image'
+
 
 const TransactionHeader = () => {
     return (

@@ -3,7 +3,7 @@
 import React from 'react'
 import Sidebar from '../components/sidebar'
 import bill_icon from '../assets/Icons/recurring Icon.png'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import BillList from '../components/billsList';
 import MobileTab from '../components/mobileTab';
 import Dropdown from '../components/dropdown';
