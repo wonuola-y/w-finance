@@ -23,7 +23,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-64  h-screen fixed bg-gray-800 text-white p-4">
+    <aside className="w-64  h-screen fixed bg-brand-brand_black text-white p-4">
       <nav>
         <h1 className="mt-3 mb-8 text-center">w-finance</h1>
         <ul>
