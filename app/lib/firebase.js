@@ -9,8 +9,11 @@ const firebaseConfig = {
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
+let app;
+if (typeof window !== "undefined") {
+  app = initializeApp(firebaseConfig);
+}
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = app ? getAuth(app) : null;
 
 export { auth };
