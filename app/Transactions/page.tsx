@@ -37,9 +37,9 @@ const listOfTransactions = [
 
 const Transactions = () =>{
     return(
-        <div className= "flex bg-brand-bg_white_clr flex-col md:h-auto w-screen items-center justify-center lg:justify-around lg:flex-row lg:items-start">
-            <div className="hidden lg:block lg:w-1/4"> <Sidebar /></div>
-            <div className = "flex pb-10 w-full mx-4 md:px-10 lg:p-2 p-4 md:items-center md:justify-center lg:w-3/4 flex-col ">
+        <div className= "flex bg-brand-bg_white_clr flex-col md:h-auto items-center justify-center lg:justify-around lg:flex-row lg:items-start">
+            <div className="hidden lg:block lg:w-1/5 lg:mr-10"> <Sidebar /></div>
+            <div className = "flex pb-10 w-full mx-4 md:px-10 lg:p-2 p-4 md:items-center md:justify-center lg:w-4/5 flex-col ">
                 <h2 className='mb-4 font-bold text-[20px] md:w-full md:text-left pl-[20px]'>Transactions</h2>
                 <div className="bg-white min-h-5/6 rounded-xl w-full flex   flex-col mb-12 flex-grow items-center lg:px-12 ">
                     <div className='flex flex-row px-4 my-4 w-full items-center place-content-between justify-center md:justify-between md:pl-8 mx-8 md:my-6 '>
