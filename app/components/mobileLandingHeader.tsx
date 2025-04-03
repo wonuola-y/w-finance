@@ -3,7 +3,6 @@ import menu_icon from '../assets/Icons/hambuger-menu.png'
 import cancel from '../assets/Icons/cancel.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import {usePathname} from 'next/navigation'; 
 import downArrow from '../assets/Icons/down-arrow.png'
 
 const MobileLandingHeader = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import CashBackItem from "./cashBackItem";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 
 const CashSwitch = () => {

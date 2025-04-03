@@ -1,7 +1,7 @@
 import { useState } from "react";
 import pagination from '../assets/Icons/paginatin.png';
 import Image from 'next/image'
-import Emma from "../assets/Sidebar/emma.png";
+
 
 type item = {
     name: string
