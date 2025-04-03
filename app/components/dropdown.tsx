@@ -1,3 +1,4 @@
+"use client";
 import { useState, useRef, useEffect } from "react";
 import pagination from '../assets/Icons/paginatin.png';
 import Image from 'next/image'
@@ -8,7 +9,6 @@ type item = {
 
 type Props = {
     items : item[],
-    
     
 }
 
