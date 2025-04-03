@@ -37,17 +37,23 @@ const SignUp = () => {
         }
         catch (err: unknown) {
             if (err instanceof FirebaseError) {
-                if (err.code === "auth/user-not-found") {
-                    setError("User not found. Please check your email.");
-                } else if (err.code === "auth/wrong-password") {
-                    setError("Incorrect password. Please try again.");
-                } else {
-                    setError("An error occurred during sign-in.");
-                }
-            } else {
-                setError("An unexpected error occurred.");
+            switch (err.code) {
+                case "auth/email-already-in-use":
+                    setError("This email is already registered. Please log in.");
+                    break;
+                case "auth/invalid-email":
+                    setError("Invalid email format. Please enter a valid email.");
+                    break;
+                case "auth/weak-password":
+                    setError("Password should be at least 6 characters.");
+                    break;
+                default:
+                    setError("An error occurred during sign-up. Please try again.");
             }
+        }
+
           }
+          
     }
 
 return (

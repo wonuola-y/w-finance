@@ -22,27 +22,39 @@ const Login = () => {
     e.preventDefault();
     setError("")
     try {
-      await signInWithEmailAndPassword(auth, password, email)
+      await signInWithEmailAndPassword(auth, email, password, )
       router.push('/Overview')
     }
     catch (err: unknown) {
       if (err instanceof FirebaseError) {
-          if (err.code === "auth/user-not-found") {
-              setError("User not found. Please check your email.");
-          } else if (err.code === "auth/wrong-password") {
-              setError("Incorrect password. Please try again.");
-          } else {
-            console.log(err)
-              setError("An error occurred during sign-in.");
+          console.error("Firebase Error:", err.code, err.message);  // Log error details
+          switch (err.code) {
+              case "auth/user-not-found":
+                  setError("User not found. Please check your email.");
+                  break;
+              case "auth/wrong-password":
+                  setError("Incorrect password. Please try again.");
+                  break;
+              case "auth/invalid-email":
+                  setError("Invalid email format. Please enter a valid email.");
+                  break;
+              case "auth/too-many-requests":
+                  setError("Too many failed attempts. Try again later.");
+                  break;
+              default:
+                  setError("An error occurred during sign-in.");
           }
       } else {
+          console.error("Unexpected Error:", err);
           setError("An unexpected error occurred.");
       }
-    }
   }
+  
+}
+  
   return ( 
     
-    <div className='flex flex-col md:flex-row items-center justify-center bg-brand-bg_white_clr h-screen'>
+    <div className='flex flex-col md:flex-row items-center justify-center bg-brand-bg_white_clr h-screen text-black'>
       {error && <p style={{color:"red"}}>{error}</p>}
       <div className="block md:hidden">
         <div className='bg-brand-brand_black text-white flex justify-center py-6 font-extrabold text-3xl rounded-b-xl w-screen md:w-100'>
