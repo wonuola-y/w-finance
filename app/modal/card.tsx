@@ -22,7 +22,7 @@ const Card = ({ header, themeColor,  children }:Props) => {
                                     <p className='w-4 h-4 rounded-full mr-4' style={{ backgroundColor: themeColor }}></p>
                                     <h2 className='font-bold'>{header}</h2>
                                 </div>
-                                <p><Dropdown items={[{name:"Modified"},{name:"Delete budget"}]} first = '...'/></p>
+                                <p><Dropdown items={[{name:"..."}, {name:"Modified"},{name:"Delete budget"}]}/></p>
                             </div>
                     <div>
                         {children}
