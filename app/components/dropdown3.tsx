@@ -17,7 +17,7 @@ const Dropdown3 = ({items, first}:Props) =>{
 
     return (
         <div className = {isOpen ? (" px-2 py-1  relative flex items-center justify-center cursor-pointer border border-grey-300 bg-white rounded-xl outline-none ring-2 ") : 
-            ("px-4 relative flex items-center py-1 justify-center cursor-pointer border border-grey-300 bg-white rounded-xl bg-[#EBE8E8] ")}
+            ("px-4 relative flex items-center py-1 justify-center cursor-pointer border border-grey-300 rounded-xl bg-[#EBE8E8] ")}
          > 
             
             <button className=" flex px-2 py-2 justify-between w-full" onClick ={() => setIsOpen(!isOpen)}>
