@@ -63,11 +63,11 @@ const Transactions = () =>{
                         </div>
                         <div className=' hidden md:flex mx-6 items-center justify-center'>
                             <p className="text-brand-text_gray text-[12px] text-left pr-2">Sort by</p>
-                           <Dropdown items = {[{name:"Age"}, {name: "Size"}, {name: "Modified"}]} first = "Latest"/>
+                           <Dropdown items = {[{name:"Latest"}, {name:"Age"}, {name: "Size"}, {name: "Modified"}]} />
                         </div>
                         <div className=' hidden md:flex mx-6 items-center justify-center'>
                             <p className="text-brand-text_gray text-[12px] text-left pr-2">Category</p>
-                           <Dropdown items = {[{name:"Transportation"}, {name: "Lifestyle"}, {name: "General"}]} first = "All Categories"/>
+                           <Dropdown items = {[{name:"All categories"}, {name:"Transportation"}, {name: "Lifestyle"}, {name: "General"}]} />
                         </div>
                     </div>
                     <div className = 'w-full px-4 ' >

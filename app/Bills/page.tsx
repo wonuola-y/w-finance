@@ -25,8 +25,8 @@ const Bills = () =>{
                         <div className='w-full bg-brand-brand_black px-6 py-4 rounded-lg mb-4 md:flex flex-col flex-grow'>
                             <Image src={bill_icon} width={40} height={40} 
                             className='w-8 clear-both float-left h-8 mr-4 md:my-8' alt='user expense img'  /> 
-                            <p className='text-brand-text_gray text-white text-[12px] mb-2'>Total Bills</p>
-                            <h2 className='text-brand-text_gray text-white font-bold text-3xl'>$385.98</h2>
+                            <p className=' text-white text-[12px] mb-2'>Total Bills</p>
+                            <h2 className=' text-white font-bold text-3xl'>$385.98</h2>
                         </div>
                         <div className='bg-white w-full rounded-lg black px-6 py-4  mb-4 '>
                             <h3 className=' font-bold text-[15px] text-black mb-2'>Summary</h3>
@@ -39,7 +39,7 @@ const Bills = () =>{
                                 <p className=' text-[13px] text-black  font-bold lg:text-[10px]'>{`2($1230.00)`}</p>
                             </div>
                             <div className=' py-3 flex justify-between'>
-                                <p className='text-brand-text_gray text-[13px] text-red-500 lg:text-[10px]'>Due soon</p>
+                                <p className=' text-[13px] text-red-500 lg:text-[10px]'>Due soon</p>
                                 <p className=' text-[13px] text-red-500 font-bold lg:text-[10px]'>{`2($40.00)`}</p>
                             </div>    
                         </div>
@@ -63,7 +63,7 @@ const Bills = () =>{
 
                             <div className=' hidden md:flex mx-6 items-center justify-center'>
                                 <p className="text-brand-text_gray text-[12px] lg:text-[10px] text-left pr-2">Sort by</p>
-                                <Dropdown items = {[{name:"Age"}, {name: "Size"}, {name: "Modified"}]} first = "Latest"/>
+                                <Dropdown items = {[{name:"Latest"}, {name:"Age"}, {name: "Size"}, {name: "Modified"}]}/>
                             </div>
                         </div>
                         <div>
