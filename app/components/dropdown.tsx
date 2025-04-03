@@ -8,8 +8,7 @@ type item = {
 }
 
 type Props = {
-    items : item[],
-    
+    items : item[],   
 }
 
 const Dropdown = ({items}:Props) =>{
