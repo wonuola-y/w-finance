@@ -13,7 +13,7 @@ const Transaction_page = ({
     text, img, amount, date, color, category
 }: Props) => {
   return (
-      <div className='flex w-full border-b-[1px] border-b-gray-100 py-3 items-center justify-start justify-between w-full'>
+      <div className='flex w-full border-b-[1px] border-b-gray-100 py-3 items-center justify-start justify-between '>
         
             <div className='mr-2 flex '>
                   <Image src={img} width={40} height={40} className='w-8 h-8' alt='user expense img'  />

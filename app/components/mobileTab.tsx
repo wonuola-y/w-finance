@@ -40,7 +40,7 @@ const MobileTab = () =>{
                     {navItems.map((item) => {
                         const isActive = pathname === item.path;
                         return(
-                            <li key = {item.name} className={`flex flex-grow items-center h-10 md:h-14 rounded-t-md justify-center ${isActive ? "bg-white border-b-[#277C78] border-b-[5px] border-solid" : "bg-transparent"}`}>
+                            <li key = {item.name} className={`flex flex-grow items-center h-10 md:h-14 rounded-t-md justify-center hover:bg- ${isActive ? "bg-white border-b-[#277C78] border-b-[5px] border-solid" : "bg-transparent"}`}>
                                 <Link key = {item.name} href={item.path} className='flex justify-center items-center flex-col'>
                                     <Image key = {item.name} src ={isActive ? item.activeIcon : item.inactiveIcon} width ={40} height = {40} alt = {item.name} className='w-5 h-5  mb-[4px]'/>
                                     <p className= {` hidden md:block text-[11px] text-brand-text_gray text-center ${isActive ? "text-green " : "text-white"}`}>{item.name}</p>

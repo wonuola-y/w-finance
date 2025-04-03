@@ -5,7 +5,9 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx"; 
 import activeHome from "../assets/Icons/active_home.png";
 import pots from "../assets/Icons/small_pot.png";
-import budget from '../assets/Icons/recurring_bills.svg'
+import budget from '../assets/Icons/budgets.svg'
+import trans from "../assets/Icons/transactions.svg";
+import bills from "../assets/Icons/recurring_bills.svg";
 import Image from "next/image";
 
 const Sidebar = () => {
@@ -13,8 +15,10 @@ const Sidebar = () => {
 
   const links = [
     { href: "/Overview", label: "Home" , img: activeHome},
+    { href: "/Transactions", label: "Transactions" , img:trans},
     { href: "/Budget", label: "Budget" , img:budget},
     { href: "/Pots", label: "Pots" , img: pots},
+    { href: "/Bills", label: "Recurring Bills" , img:bills},
     { href: "/", label: "Contact" , img:activeHome},
   ];
 
