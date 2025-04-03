@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import BillItem from "./billItems";
 import logo_1 from '../assets/Icons/Ellipse 13.png'
 import logo_2 from '../assets/Icons/Ellipse 13 1.png'
 import logo_3 from '../assets/Icons/Ellipse 13 2.png'
