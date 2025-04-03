@@ -15,8 +15,8 @@ const Bills = () =>{
     return(
         <div className='flex bg-brand-bg_white_clr  flex-col py-6  lg:py-0 md:pb-12 lg:flex-row lg:items-start md:h-auto '>
             {/*className = 'flex bg-brand-bg_white_clr flex-col md:h-auto w-screen items-center justify-center lg:justify-around lg:flex-row lg:items-start' */}
-            <div className='hidden lg:block w-[25%]'><Sidebar/></div>
-            <div className='w-full flex flex-col px-6 lg:w-[75%] lg:py-6'>
+            <div className='hidden lg:block w-1/5 lg:mr-10 '><Sidebar/></div>
+            <div className='w-full flex flex-col px-6 lg:w-4/5 lg:py-6'>
                 <div>
                     <h2 className='mb-4 pl-4 text-2xl font-semibold'>Recurring Bills</h2>
                 </div>
