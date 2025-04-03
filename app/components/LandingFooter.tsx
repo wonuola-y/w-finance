@@ -25,7 +25,8 @@ const LandingFooter = () =>{
                     <ul className="text-[16px]">
                         <li><Link className=" text-[#96989A] hover:text-white active:text-white hover:underline duration-400  delay-100 transition-all focus:text-white cursor-pointer" href="/Help#privacy">Privacy</Link></li>
                         <li><Link className=" text-[#96989A] hover:text-white active:text-white hover:underline duration-400  delay-100 transition-all focus:text-white cursor-pointer" href="/Help#complaint">Complaints</Link></li>
-                        <li><Link className=" text-[#96989A] hover:text-white active:text-white hover:underline duration-400  delay-100 transition-all focus:text-white cursor-pointer" href="/#Help#cookie">Cookie policy</Link></li>
+                        <li><Link className=" text-[#96989A] hover:text-white active:text-white hover:underline duration-400  delay-100 transition-all focus:text-white cursor-pointer" href="/Help#cookie">Cookie Policy</Link></li>
+                        
                     </ul>
                 </div>
                 <div className="w-[50%] box-border lg:w-[15%]">
